@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Lato&family=Montserrat:wght@500&family=Outfit:wght@300;700&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(212, 45%, 89%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vw;
+    min-height: 100vh;
+    font-family: "Outfit", sans-serif;
+}
+
+.card {
+    height: 500px;
+    background-color: hsl(0, 0%, 100%);
+    width: 320px;
+    padding: 16px;
+    border-radius: 20px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+    margin: 60px 20px;
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.title {
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: 1.4em;
+    color: hsl(218, 44%, 22%);
+    margin-top: 10px;
+}
+
+p {
+    text-align: center;
+    font-size: 15px;
+    color: hsl(220, 15%, 55%);
+    margin: 15px;
+    line-height: 1.3em;
+}
+
+/* - White: hsl(0, 0%, 100%)
+- Light gray: hsl(212, 45%, 89%)
+- Grayish blue: hsl(220, 15%, 55%)
+- Dark blue: hsl(218, 44%, 22%) */
