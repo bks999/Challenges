@@ -10,6 +10,7 @@ body {
     display: flex;
     flex-direction: column;
     background-color: hsl(0, 0%, 100%);
+    min-height: 100vh;
 }
 
 @media screen and (min-width: 376px) {
@@ -177,13 +178,14 @@ button {
 }
 
 
-@media screen and (width < 376px) {
+@media screen and (max-width: 400px) {
     .summary-box {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         height: 60%;
+        width: 100%;
         background-color: hsl(0, 0%, 100%);
         border-radius: 20px;
         box-shadow: 14px 14px 10px hsl(221, 100%, 96%);
