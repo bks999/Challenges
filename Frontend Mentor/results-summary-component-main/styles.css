@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Hanken+Grotesk:wght@500;700;800&family=Lato&family=Montserrat:wght@500&family=Outfit:wght@300;700&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Hanken Grotesk", sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(0, 0%, 100%);
+}
+
+@media screen and (min-width: 376px) {
+    .summary-box {
+        margin: 5% auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+        height: 350px;
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 20px;
+        box-shadow: 14px 14px 10px hsl(221, 100%, 96%);
+    }
+
+    .result-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 100%;
+        background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+        border-radius: 24px;
+    }
+}
+
+.result-box h3 {
+    color: hsl(241, 100%, 89%);
+    margin: 36px 0 22px;
+    padding-top: 34px;
+    font-size: 16px;
+}
+
+.summary-circlebox {
+    padding: 25px 40px;
+    border-radius: 50%;
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+}
+
+.summary-result {
+    color: hsl(0, 0%, 100%);
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.summary-100 {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    color: hsla(241, 100%, 89%, 0.6);
+}
+
+.result-box h2 {
+    color: hsl(0, 0%, 100%);
+    padding: 22px 0 10px;
+    font-size: 22px;
+}
+
+.result-box p {
+    padding: 0 40px 40px;
+    margin-bottom: 40px;
+    font-size: 12px;
+    text-align: center;
+    color: hsl(241, 100%, 89%);
+}
+
+.summary-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    width: 50%;
+    height: 100%;
+    padding: 25px;
+}
+
+.summary-content h3 {
+    font-size: 17px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.boxes {
+    width: 100%;
+    padding: 7px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.reaction {
+    color: hsl(0, 100%, 67%);
+    background-color: hsla(0, 100%, 67%, 0.1);
+}
+
+.memory {
+    color: hsl(39, 100%, 56%);
+    background-color: hsla(39, 100%, 56%, 0.1);
+}
+
+.verbal {
+    color: hsl(166, 100%, 37%);
+    background-color: hsla(166, 100%, 37%, 0.1);
+}
+
+.visual {
+    color: hsl(234, 85%, 45%);
+    background-color: hsla(234, 85%, 45%, 0.1);
+}
+
+.reaction span::before {
+    content: url("/assets/images/icon-reaction.svg");
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 5px 0 -5px;
+}
+
+.memory span::before {
+    content: url("/assets/images/icon-memory.svg");
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 5px 0 -5px;
+}
+
+.verbal span::before {
+    content: url("/assets/images/icon-verbal.svg");
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 5px 0 -5px;
+}
+
+.visual span::before {
+    content: url("/assets/images/icon-visual.svg");
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 5px 0 -5px;
+}
+
+.item-result {
+    color: black;
+    margin-right: -20px;
+}
+
+.summary-content span {
+    margin-left: -20px;
+}
+
+button {
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 12px;
+    padding: 12px;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(224, 30%, 27%);
+    border: none;
+    border-radius: 20px;
+    margin: 12px 0;
+    width: 100%;
+}
+
+
+@media screen and (width < 376px) {
+    .summary-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 60%;
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 20px;
+        box-shadow: 14px 14px 10px hsl(221, 100%, 96%);
+    }
+
+    .result-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 375px;
+        background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+        border-radius: 24px;
+    }
+
+    .summary-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: left;
+        width: 100%;
+        height: 60vh;
+    }
+}
